@@ -76,14 +76,14 @@ data
 │
 └───annotations
 │   │   instances_train2017.json
-│   │   instances_val2017.json
-│   │ 
+│   │__ instances_val2017.json
+│   
 └───train
 │   │	img____1.jpg
-│   │   img____2.jpg
+│   │__ img____2.jpg
 └───val
     │   img____1.jpg
-    │   img____2.jpg
+    │__ img____2.jpg
 ```
 
 ## Task-2

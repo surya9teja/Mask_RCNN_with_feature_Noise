@@ -135,6 +135,14 @@ def forward(self, x: Tensor) -> Dict[str, Tensor]:
 
 ## Task-4
 
+Training and evaluate the model with feature noise `use_feature_noise = True`
+
+```Python
+for epoch in range(epoch, num_epochs):
+        train_one_epoch(model, optimiser, dataloaders["train"], device, epoch, writer, print_freq=1, use_feature_noise=False)
+        evaluate(model, dataloaders["val"], device, epoch, use_feature_noise=False, writer=writer)
+```
+
 Comparing the losses of the models with latent noise and with out latent noise
 
 ![Loss Comparision](./assets/loss_comparision.png)

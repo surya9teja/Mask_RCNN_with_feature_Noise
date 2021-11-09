@@ -12,8 +12,9 @@
 ## List of Tasks
 
 1.  Clone a state of art Mask RCNN implementation in PyTorch
-2.  Add random noise to the latent space of the model (i.e prior to Regional Proposal Network)
-3.  Train the model with noise and with out noise and compare the loss with charts
+2.  Download few samples from COCO dataset
+3.  Add random noise to the latent space of the model (i.e prior to Regional Proposal Network)
+4.  Train the model with noise and with out noise and compare the loss with charts
 
 **Abstract about Latent space**
 
@@ -56,6 +57,7 @@ coco_eval.py
 engine.py - For training the model
 utils.py
 ```
+## Task-2
 
 Downloading the random `25` samples data using following snippet `data/download_dataset.py`
 
@@ -86,7 +88,7 @@ data
     │__ img____2.jpg
 ```
 
-## Task-2
+## Task-3
 
 Implementation of random noise into the encoder latent space
 
@@ -131,7 +133,7 @@ def forward(self, x: Tensor) -> Dict[str, Tensor]:
         return x
 ```
 
-## Task-3
+## Task-4
 
 Comparing the losses of the models with latent noise and with out latent noise
 
